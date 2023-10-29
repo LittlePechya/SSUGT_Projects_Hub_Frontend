@@ -6,12 +6,11 @@
 }
 
 .about-us {
-  margin: 40px 0 20px 0;
+  margin-top: 20px;
 }
 .about-us__name {
   font-size: 48px;
   font-weight: 700;
-  margin: 0 0 20px 0;
 }
 .about-us__info {
   font-size: 24px;

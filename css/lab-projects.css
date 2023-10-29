@@ -1,0 +1,16 @@
+:root {
+  --main-color: #7793de;
+  --text-color: #555;
+  --white-color: #fff;
+}
+
+main {
+  margin-top: 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.test-card {
+  background-color: #7793de;
+  display: flex;
+}/*# sourceMappingURL=lab-projects.css.map */
