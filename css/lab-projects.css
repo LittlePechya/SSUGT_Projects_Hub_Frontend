@@ -1,16 +1,120 @@
-:root {
-  --main-color: #7793de;
-  --text-color: #555;
-  --white-color: #fff;
-}
-
-main {
-  margin-top: 40px;
+.main {
   width: 80%;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
 }
 
-.test-card {
-  background-color: #7793de;
+.search-section {
+  width: 100%;
+  height: 250px;
+  background-color: var(--main-color);
+  border-radius: 20px;
   display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.filter-table {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.filter-table__first-col {
+  width: 20%;
+  text-align: center;
+}
+.filter-table__second-col {
+  width: 80%;
+}
+.filter-table__label {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--white-color);
+}
+.filter-table__text-field {
+  height: 80%;
+  width: 95%;
+  border-radius: 20px;
+  border: none;
+  color: var(--text-color);
+  font-size: 20px;
+  padding: 0 10px;
+}
+.filter-table__button-column {
+  text-align: right;
+}
+.filter-table__button {
+  width: 90px;
+  height: 50px;
+  margin: 20px 0 0 0;
+  border: none;
+  border-radius: 40px;
+  font-size: 22px;
+  font-weight: 700;
+  background-color: var(--white-color);
+  color: var(--main-color);
+}
+
+.projects {
+  margin: 20px 0 0 0;
+}
+
+.project-card__link {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+.project-card__education-level {
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--main-color);
+  margin: 0 0 10px 0;
+}
+.project-card__text {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+.project-card__bold-text {
+  font-weight: 700;
+}
+.project-card__director {
+  color: var(--main-color);
+}
+.project-card__bottom-line {
+  border-bottom: 14px solid var(--main-color);
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.button-row {
+  width: 100%;
+  height: 50px;
+  margin: 0 0 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.button-row button {
+  width: 50px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.button-row__current {
+  background-color: var(--text-color);
+  color: var(--white-color);
+}
+.button-row__not-current:hover {
+  background-color: var(--helper-color);
+  color: var(--white-color);
+  transition: background-color 0.3s ease;
+}
+.button-row__nav:hover {
+  background-color: var(--helper-color);
+  color: var(--white-color);
+  transition: background-color 0.3s ease;
 }/*# sourceMappingURL=lab-projects.css.map */

@@ -8,14 +8,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 *{
-    background-color: var(--white-color);
     font-family: 'Poppins', sans-serif;
 }
+
+// Color variables
 
 :root{
     --main-color: #7793de;
     --text-color: #555;
     --white-color: #fff;
+    --helper-color: #716f6f;
     
 }
 
@@ -120,6 +122,7 @@
 .popup{
     position: fixed;
     left: 50%;
+    background-color: var(--white-color);
     transform: translate(-50%, -50%) scale(1.25);
 
     // To hide popup by default
@@ -160,6 +163,7 @@
 
         text-align: right;
         opacity: 0.7;
+        background-color: var(--white-color);
 
         border: none;
 

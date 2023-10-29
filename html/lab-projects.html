@@ -61,11 +61,84 @@
             <div class="header__bottom-border"></div>
         </header>
 
+        <!-- Main part -->
         <main class="main">
-            <div class="test-card">
-                <h1> Name</h1>
-                <div class="col"> <h1>Check</h1></div>
-                <div class="col2"> <input type="text" name="" id=""></div>
+
+            <!-- Search section with filter table -->
+            <form class="search-section">
+                
+                <table class="filter-table">
+                    
+                    <tbody>
+                        <tr>
+                            <td class="filter-table__first-col" valign="middle"><label class="filter-table__label" for="name-filter-field">Название</label></td>
+                            <td class="filter-table__second-col" valign="middle"><input class="filter-table__text-field" type="text" id="name-filter-field"></td>
+                        </tr>
+    
+                        <tr>
+                            <td class="filter-table__first-col" valign="middle"><label  class="filter-table__label" for="tag-filter-field">Теги</label></td>
+                            <td class="filter-table__second-col" valign="middle"><input class="filter-table__text-field" type="text" id="tag-filter-field" placeholder="#ИИ #Программирование"></td>
+                        </tr>
+    
+                        <tr>
+                            <td class="filter-table__first-col" valign="middle"><label  class="filter-table__label" for="author-filter-field">Авторы</label></td>
+                            <td class="filter-table__second-col" valign="middle"><input class="filter-table__text-field" type="text" id="author-filter-field"></td>
+                        </tr>
+                    </tbody>
+    
+                    <tfoot>
+                        <tr>
+                            <td class="filter-table__button-column" colspan="2" valign="middle">
+                                <button class="filter-table__button" type="submit">Поиск</button>
+                            </td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+
+            </form>
+
+            <!-- Laboratory projects cards -->
+            <div class="projects">
+                <div class="project-card" id="first-card">
+                    <p class="project-card__text"> <a class="project-card__link" href="project-page.html">Fitting room</a></p>
+                    <p class="project-card__education-level">Бакалавриат</p>
+                    <p class="project-card__text"><span class="project-card__bold-text">Курс: </span>3</p>
+                    <p class="project-card__text"><span class="project-card__bold-text">Тип проекта: </span>прикладной</p>
+                    <p class="project-card__text"><span class="project-card__bold-text">Цель проекта: </span>Уникальная примерочная в твоем смартфоне</p>
+                    <p class="project-card__text"><span class="project-card__bold-text">Сроки реализации: </span>Продолжительность проекта составляет 2 семестра</p>
+                    <p class="project-card__text"><span class="project-card__bold-text">Руководитель проекта: </span> <span class="project-card__director">Шарапов А.А.</span></p>
+                    <div class="project-card__bottom-line"></div>
+                </div>
+                <div class="project-card" id="second-card">
+                    <p class="project-card__text"> <a class="project-card__link" href="project-page.html">Квадрокоптер</a></p>
+                    <p class="project-card__education-level">Бакалавриат</p>
+                    <p class="project-card__text"><span class="project-card__bold-text">Курс: </span>3</p>
+                    <p class="project-card__text"><span class="project-card__bold-text">Тип проекта: </span>прикладной</p>
+                    <p class="project-card__text"><span class="project-card__bold-text">Цель проекта: </span>Уникальная примерочная в твоем смартфоне</p>
+                    <p class="project-card__text"><span class="project-card__bold-text">Сроки реализации: </span>Продолжительность проекта составляет 2 семестра</p>
+                    <p class="project-card__text"><span class="project-card__bold-text">Руководитель проекта: </span> <span class="project-card__director">Шарапов А.А.</span></p>
+                    <div class="project-card__bottom-line"></div>
+                </div>
+                <div class="project-card" id="third-card">
+                    <p class="project-card__text"> <a class="project-card__link" href="project-page.html">Baby John</a></p>
+                    <p class="project-card__education-level">Бакалавриат</p>
+                    <p class="project-card__text"><span class="project-card__bold-text">Курс: </span>3</p>
+                    <p class="project-card__text"><span class="project-card__bold-text">Тип проекта: </span>прикладной</p>
+                    <p class="project-card__text"><span class="project-card__bold-text">Цель проекта: </span>Уникальная примерочная в твоем смартфоне</p>
+                    <p class="project-card__text"><span class="project-card__bold-text">Сроки реализации: </span>Продолжительность проекта составляет 2 семестра</p>
+                    <p class="project-card__text"><span class="project-card__bold-text">Руководитель проекта: </span> <span class="project-card__director">Шарапов А.А.</span></p>
+                    <div class="project-card__bottom-line"></div>
+                </div>
+
+                <div class="button-row">
+                    <button class="button-row__nav" id="prev"><i class="fa-solid fa-arrow-left most-interesting__button"></i></button>
+                    <button class="button-row__current">1</button>
+                    <button class="button-row__not-current">2</button>
+                    <button class="button-row__not-current">n</button>
+                    <button class="button-row__nav" id="next"><i class="fa-solid fa-arrow-right most-interesting__button"></i></button>
+                </div>
+                
             </div>
         </main>
 
