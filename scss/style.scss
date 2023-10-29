@@ -1,0 +1,230 @@
+// General scss file
+// File navigation
+// 1. Common styles
+// 2. Header styles
+// 3. Login-form window
+
+// 1. Common styles
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    background-color: var(--white-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --main-color: #7793de;
+    --text-color: #555;
+    --white-color: #fff;
+    
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+// 2. Header styles
+.header{
+	&__nav{
+        margin: 20px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo-container{
+        min-width: 135px;
+    }
+
+    &__nav-list-container{
+        min-width: 120px;
+    }
+
+    &__button-container{
+        min-width: 90px;
+    }
+
+	&__logo{
+       max-height: 100px;
+
+       &:hover{
+        transform: scale(1.1);
+        transition: transform 0.2s ease;
+       }
+    }
+
+	&__nav-list{
+        display: flex;
+        list-style: none;
+        font-size: 28px;
+        flex-wrap: wrap;
+        line-height: 1.7;
+    }
+
+    &__list-element{
+        margin: 0 3em 0.1em 0;
+    }
+
+    &__list-element a{
+        text-decoration: none;
+        font-weight: 600;
+        color: var(--main-color);
+        position: relative;
+
+        &::after{
+            content: '';
+            display: block;
+            width: 0;
+            height: 4px;
+            background: var(--main-color);
+            margin: auto;
+            border-radius: 10px;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: width 0.3s ease;
+        }
+
+        &:hover::after{
+            width: 90%;
+        }
+    }
+
+	&__login-button{
+        background-color: var(--main-color);
+        border: none;
+        width: 100px;
+        height: 50px;
+        border-radius: 30px;
+        font-size: 24px;
+        color: white;
+        transition: transform 0.2s ease;
+        min-width: auto;
+        padding: 0 10px;
+
+        &:hover{
+            transform: translateY(-5px);
+        }
+    }
+	&__bottom-border{
+        margin-top: 20px;
+        border-bottom: 14px solid var(--main-color);
+        border-radius: 10px;
+    }
+}
+
+// 3. Login-form window
+
+.popup{
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.25);
+
+    // To hide popup by default
+    top: -150%;
+    opacity: 0%;
+
+    width: 550px;
+    height: 450px;
+    z-index: 1;
+
+    padding: 20px;
+    border-radius: 40px;
+    border: solid 12px var(--main-color);
+
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+
+    &__active{
+        // To show the popup
+        top: 50%;
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+
+        transition: top 0ms ease-in-out 0ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 20ms ease-in-out 0ms;
+    }
+
+    &__close-button-container{
+        display: flex;
+        justify-content: right;
+    }
+
+    &__close-btn{
+        font-size: 32px;
+        font-weight: 600;
+
+        text-align: right;
+        opacity: 0.7;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+
+    &__name{
+        font-size: 32px;
+        font-weight: 600;
+
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+
+    &__form-element{
+        display: flex;
+        margin: 0 auto 20px auto;
+        width: 95%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__label{
+        font-size: 26px;
+        font-weight: 400;
+    }
+
+    &__input{
+        color: var(--text-color);
+        font-size: 24px;
+        border: 2px solid var(--text-color);
+        border-radius: 20px;
+        padding: 5px;
+    }
+
+    &__button-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 20px 0;
+    }
+
+    &__button{
+        background-color: var(--main-color);
+        color: var(--white-color);
+        
+        font-size: 24px;
+        font-weight: 400;
+        width: 100px;
+        height: 50px;
+        border-radius: 20px;
+    }
+
+    &__info{
+        text-align: center;
+        font-size: 24px;
+        color: var(--text-color);
+        line-height: 1.2;
+    }
+
+    &__special-text{
+        color: var(--main-color);
+    }
+
+    &__link{
+        color: var(--main-color);
+    }
+}
