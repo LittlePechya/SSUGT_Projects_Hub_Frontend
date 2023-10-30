@@ -1,0 +1,65 @@
+.main {
+  margin: 20px 0 0 0;
+}
+
+.lab-project-page {
+  height: 100%;
+  display: flex;
+}
+.lab-project-page__flex-container {
+  display: flex;
+}
+.lab-project-page__left-part {
+  width: 70%;
+}
+.lab-project-page__name {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--black-color);
+}
+.lab-project-page__summary {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--main-color);
+  margin: 0 0 20px 0;
+}
+.lab-project-page__header {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--black-color);
+  margin: 20px 0 0 0;
+}
+.lab-project-page__text {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-color);
+  max-width: 80%;
+  padding: 0 0 0 30px;
+}
+.lab-project-page__right-part {
+  width: 30%;
+  height: 50%;
+  background-color: var(--main-color);
+  border-radius: 40px;
+}
+
+.file-container {
+  width: 70%;
+  margin: 20px 0 20px 0;
+  background-color: var(--light-gray-color);
+  border-radius: 20px;
+  padding: 30px;
+}
+.file-container__icon {
+  font-size: 20px;
+  padding: 5px 0 0 0;
+  margin: 0 10px 0 0;
+}
+.file-container__row {
+  display: flex;
+}
+.file-container__link {
+  font-size: 20px;
+  color: var(--main-color);
+  cursor: pointer;
+}/*# sourceMappingURL=project-page.css.map */

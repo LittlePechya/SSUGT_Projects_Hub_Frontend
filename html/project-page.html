@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSUGT Project Hub</title>
+    <link rel="stylesheet" href="../css/nullstyle.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project-page.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/icon/favicon-16x16.png">
+
+</head>
+
+<body>
+    
+    <!-- Форма входа в аккаунт админа/ Login form to the admin panel-->
+    <div class="popup">
+        <div class="popup__close-button-container">
+            <button class="popup__close-btn" id="close-button">X</button>
+        </div>
+        <div class="popup__form">
+            <p class="popup__name">Вход в аккаунт</p>
+            <div class="popup__form-element">
+                <label class="popup__label" for="email">Почта</label>
+                <input class="popup__input" type="text" id="email" placeholder="Введите адрес почты">
+            </div>
+            <div class="popup__form-element">
+                <label class="popup__label" for="password">Пароль</label>
+                <input class="popup__input" type="password" id="password" placeholder="Введите пароль">
+            </div>
+            <div class="popup__button-container">
+                <button class="popup__button" type="button">Вход</button>
+            </div>
+            <p class="popup__info">Для того, чтобы предложить свой проект на рассмотрение отправляйте <a class="popup__link" href="../materials/template.docx" download="">заявку</a> на почту <span class="popup__special-text">admin@yandex.ru</span></p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <nav class="header__nav">
+                <div class="header__logo-container">
+                    <img src="../img/logo/logo.png" alt="Логотип Хаб Проектов СГУГиТ" class="header__logo">
+                </div>
+                <div class="header__nav-list-container">
+                    <ul class="header__nav-list">
+                        <li class="header__list-element"><a href="index.html">Главная</a></li>
+                        <li class="header__list-element"><a href="lab-projects.html">Проекты лабораторий</a></li>
+                        <li class="header__list-element"><a href="#">Проекты СНК</a></li>
+                    </ul>
+                </div>
+                <div class="header__button-container">
+                    <button type="button" class="header__login-button" id="login-button">Войти</button>
+                </div>
+            </nav>
+            <div class="header__bottom-border"></div>
+        </header>
+
+        <!-- Main -->
+        <main class="main">
+
+            <!-- Lab project page -->
+            <div class="lab-project-page">
+                <div class="lab-project-page__flex-container">
+                    
+                    <!-- Left part of flex container / Левая часть флекс-контейнера -->
+                    <div class="lab-project-page__left-part">
+                        <h2 class="lab-project-page__name" id="project-name">Fitting room</h2>
+                        <p class="lab-project-page__summary" id="summary">Уникальная примерочная в твоем смартфоне</p>
+
+                        <h3 class="lab-project-page__header">Цель</h3>
+                        <p class="lab-project-page__text" id="object">Создать приложение со следующими функциями: точность получения измерения, простота использования, примерка в AR</p>
+
+                        <h3 class="lab-project-page__header">Стоимость</h3>
+                        <p class="lab-project-page__text" id="cost">Оценка стоимости не произведена</p>
+
+                        <h3 class="lab-project-page__header">Стадия разработки проекта</h3>
+                        <p class="lab-project-page__text" id="developing-stage">Проект находится в стадии активной разработки</p>
+
+                        <h3 class="lab-project-page__header">Область применения проекта</h3>
+                        <p class="lab-project-page__text" id="application-scope">Коммерческая продажа</p>
+
+                        <h3 class="lab-project-page__header">Сроки реализации проекта</h3>
+                        <p class="lab-project-page__text" id="realization-term">01.07.2023 - 31.12.2023</p>
+
+                        <div class="file-container">
+                            <div class="file-container__row">
+                                <i class="fas fa-paperclip file-container__icon" aria-hidden="true"></i>
+                                <a class="file-container__link" href="#" download>Техническое задание.docx</a>
+                            </div>
+                            <div class="file-container__row">
+                                <i class="fas fa-paperclip file-container__icon" aria-hidden="true"></i>
+                                <a class="file-container__link" href="#" download>План разработки.docx</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right part of flex container / Правая часть флекс-контейнера -->
+                    <div class="lab-project-page__right-part">
+                        <div class="creators-card">
+                            <div class="creators-card__authors-header"></div>
+                            <ul class="creators-card__authors-list" id="authors">
+                                <li class="creators-card__authors-list-element"> Антонов Василий Иванов, группа БИ-32</li>
+                                <li class="creators-card__authors-list-element"> Баркин Павел Васильевчи, группа БИ-32</li>
+                            </ul>
+                            <div class="creators-card__director-header"></div>
+                            <p class="creators-card__director-info">Шарапов Артем Андреевич</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="../js/image-gallery.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>

@@ -7,7 +7,9 @@
   --main-color: #7793de;
   --text-color: #555;
   --white-color: #fff;
+  --black-color: #000;
   --helper-color: #716f6f;
+  --light-gray-color: #f3f3f3;
 }
 
 .container {
