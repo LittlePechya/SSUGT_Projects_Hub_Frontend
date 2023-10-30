@@ -105,14 +105,20 @@
                     <!-- Right part of flex container / Правая часть флекс-контейнера -->
                     <div class="lab-project-page__right-part">
                         <div class="creators-card">
-                            <div class="creators-card__authors-header"></div>
+                            <div class="creators-card__authors-header">Авторы</div>
                             <ul class="creators-card__authors-list" id="authors">
-                                <li class="creators-card__authors-list-element"> Антонов Василий Иванов, группа БИ-32</li>
-                                <li class="creators-card__authors-list-element"> Баркин Павел Васильевчи, группа БИ-32</li>
+                                <li class="creators-card__authors-list-element"> Антонов В.И. (БИ-32)</li>
+                                <li class="creators-card__authors-list-element"> Баркин П.В. (БИ-32)</li>
                             </ul>
-                            <div class="creators-card__director-header"></div>
-                            <p class="creators-card__director-info">Шарапов Артем Андреевич</p>
+                            <div class="creators-card__director-header">Руководитель</div>
+                            <!-- Тег button, если пользователь пользуется сайтом с клавиатуры -->
+                            <button class="creators-card__director-info data" data-email="example@examoe.com" data-phone="123456789">Шарапов Артем Андреевич</button>
+                            <div class="creators-card__director-popup" id="director-popup">
+                                <p class="creators-card__director-popup-info">Почта: example@example.com</p>
+                                <p class="creators-card__director-popup-info">Телефон: 123456789</p>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -120,7 +126,7 @@
 
     </div>
 
-    <script src="../js/image-gallery.js"></script>
+    <script src="../js/project-page.js"></script>
     <script src="../js/login.js"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@
   display: flex;
 }
 .lab-project-page__left-part {
-  width: 70%;
+  width: 65%;
 }
 .lab-project-page__name {
   font-size: 36px;
@@ -37,8 +37,8 @@
   padding: 0 0 0 30px;
 }
 .lab-project-page__right-part {
-  width: 30%;
-  height: 50%;
+  width: 35%;
+  height: 45%;
   background-color: var(--main-color);
   border-radius: 40px;
 }
@@ -62,4 +62,41 @@
   font-size: 20px;
   color: var(--main-color);
   cursor: pointer;
+}
+
+.creators-card {
+  padding: 20px 20px;
+  word-wrap: break-word;
+  color: var(--white-color);
+}
+.creators-card__authors-header, .creators-card__director-header {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 3px 0;
+}
+.creators-card__authors-list {
+  margin: 0 0 20px 0;
+}
+.creators-card__authors-list-element {
+  font-size: 26px;
+  font-weight: 500;
+}
+.creators-card__director-info {
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--white-color);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.creators-card__director-popup {
+  font-size: 20px;
+  color: var(--main-color);
+  width: 100%;
+  background-color: var(--white-color);
+  border-radius: 20px;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
 }/*# sourceMappingURL=project-page.css.map */
