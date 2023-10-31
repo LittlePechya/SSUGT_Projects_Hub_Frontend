@@ -1,9 +1,15 @@
 
 // Project page style
+// 1. Common styles
+// 2. Lab-project page style
+// 3. Project-gallery style
 
+// 1. Common styles
 .main{
     margin: 20px 0 0 0;
 }
+
+// 2. Lab-project page style
 .lab-project-page{
     height: 100%;
     display: flex;
@@ -48,7 +54,7 @@
     }
 	&__right-part{
         width: 35%;
-        height: 45%;
+        height: 55%;
         background-color: var(--main-color);
         border-radius: 40px;
     }
@@ -105,8 +111,6 @@
 
         background: none;
         border: none;
-
-        cursor: pointer;
     }
 
     &__director-popup{
@@ -125,3 +129,78 @@
         transition: opacity 0.3s ease-in;
     }
 }
+
+
+// 3. Project-gallery style
+.project-gallery{
+    width: 100%;
+
+    border-radius: 40px;
+    background-color: var(--light-gray-color);
+
+    margin: 0 0 20px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: content-box;
+
+    padding: 20px 0;
+
+    &__image-row{
+        height: 90%;
+        width: 90%;
+
+        display: flex;
+        justify-content: space-between;
+
+        gap: 5em;
+
+        flex-wrap: wrap;
+    }
+
+    &__image-container{
+        height: 100%;
+        width: 25%;
+
+        // Maybe need this
+        flex-grow: 0;
+
+    }
+
+    &__image{
+        height: 100%;
+        width: 100%;
+
+        border-radius: 20px;
+       
+        cursor: pointer;
+        object-fit: cover;
+
+        min-height: 300px;
+    }
+}
+
+.enlarged-image-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    overflow: hidden;
+  }
+  
+  .enlarged-image {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .no-scroll {
+    overflow: hidden;
+  }
