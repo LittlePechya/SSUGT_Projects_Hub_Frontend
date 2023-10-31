@@ -42,6 +42,7 @@
         max-width: 500px;
         width: 100%;
         overflow: hidden;
+        border-radius: 40px;
     }
 
     &__carousel{
@@ -55,7 +56,7 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
-        border-radius: 20px;
+        border-radius: 40px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     }
 
