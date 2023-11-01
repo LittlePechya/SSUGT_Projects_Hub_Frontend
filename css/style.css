@@ -103,7 +103,7 @@
   width: 550px;
   height: 500px;
   z-index: 1;
-  padding: 0 5px;
+  padding: 0 1em;
   border-radius: 40px;
   border: solid 12px var(--main-color);
   transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
