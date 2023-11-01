@@ -196,6 +196,8 @@
     &__label{
         font-size: 26px;
         font-weight: 400;
+
+        width: 30%;
     }
 
     &__input{
@@ -204,6 +206,7 @@
         border: 2px solid var(--text-color);
         border-radius: 20px;
         padding: 5px;
+        width: 70%;
     }
 
     &__button-container{
