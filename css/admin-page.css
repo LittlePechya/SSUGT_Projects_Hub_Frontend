@@ -1,0 +1,63 @@
+.container {
+  width: 90%;
+  margin: 20px auto 0 auto;
+}
+
+.admin-panel {
+  background-color: var(--main-color);
+  border-radius: 20px;
+  color: var(--white-color);
+  min-width: 800px;
+}
+.admin-panel__header-row {
+  display: flex;
+  padding: 15px 0 0 0;
+  height: 100px;
+}
+.admin-panel__header-row-left {
+  width: 70%;
+  flex-shrink: 0;
+}
+.admin-panel__header-row-right {
+  width: 30%;
+  flex-shrink: 0;
+  padding: 0 20px 0 0;
+}
+.admin-panel__header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  margin: 0 0 15px 0;
+  max-height: 55px;
+  height: 100%;
+  vertical-align: bottom;
+}
+.admin-panel__add-project-button {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  padding: 0 10px 0 10px;
+  vertical-align: middle;
+  max-height: 55px;
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 20px;
+  border: solid 2px var(--black-color);
+}
+.admin-panel__projects-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+.admin-panel__project-card {
+  background-color: var(--white-color);
+  color: var(--main-color);
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10px;
+  border: solid 2px var(--black-color);
+  border-radius: 20px;
+  margin-bottom: 30px;
+}/*# sourceMappingURL=admin-page.css.map */
