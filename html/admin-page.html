@@ -28,9 +28,113 @@
                 </div>
             </div>
             <div class="admin-panel__projects-container">
-                <div class="admin-panel__project-card">Fitting Room</div>
-                <div class="admin-panel__project-card">Квадрокоптер</div>
+                
+                <div class="admin-panel project-card">
+                    <div class="project-card__left-part">Fitting Room</div>
+                    <div class="project-card__right-part">
+                        <div class="project-card__buttons">
+                            <button class="project-card__edit-button">...</button>
+                            <button class="project-card__delete-button">X</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="admin-panel project-card">
+                    <div class="project-card__left-part">Fitting Room</div>
+                    <div class="project-card__right-part">
+                        <div class="project-card__buttons">
+                            <button class="project-card__edit-button">...</button>
+                            <button class="project-card__delete-button">X</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+        </div>
+
+        <div class="project-form">
+            <div class="project-form__close-button-container">
+                <div class="project-form__close-button">X</div>
+            </div>
+            <p class="project-form__name" id="project-name">Страница проекта</p>
+            <div class="project-form__line">
+                <label  class="project-form__label" for="">Название</label>
+                <input  class="project-form__input" type="text">
+            </div>
+            <div class="project-form__line">
+                <label  class="project-form__label" for="">Курс</label>
+                <input  class="project-form__input" type="text">
+            </div>
+            <div class="project-form__line">
+                <label  class="project-form__label" for="">Краткое описание</label>
+                <input  class="project-form__input" type="text">
+            </div>
+            <div class="project-form__line">
+                <label  class="project-form__label" for="">Цель</label>
+                <textarea class="project-form__textarea"></textarea>
+            </div>
+            <div class="project-form__line">
+                <label  class="project-form__label" for="">Стоимость</label>
+                <input  class="project-form__input" type="text">
+            </div>
+            <div class="project-form__line">
+                <label  class="project-form__label" for="">Стадия разработки проекта</label>
+                <input  class="project-form__input" type="text">
+            </div>
+            <div class="project-form__line">
+                <label  class="project-form__label" for="">Область применения проекта</label>
+                <textarea class="project-form__textarea"></textarea>
+            </div>
+            <div class="project-form__line">
+                <label  class="project-form__label" for="">Авторы</label>
+                <input  class="project-form__input" type="text">
+            </div>
+            <div class="project-form__line">
+                <label  class="project-form__label" for="">Почта руководителя</label>
+                <input  class="project-form__input" type="text">
+            </div>
+            
+            <div class="project-form__line">
+                <label  class="project-form__label" for="">Телефон руководителя</label>
+                <input  class="project-form__input" type="text">
+            </div>
+
+            <div class="project-form__images-line">
+                <img class="project-form__images-line-item" src="../img/projects/drone.jpg" alt="">
+                <img class="project-form__images-line-item" src="../img/projects/drone.jpg" alt="">
+                <img class="project-form__images-line-item" src="../img/projects/drone.jpg" alt="">
+                <img class="project-form__images-line-item" src="../img/projects/drone.jpg" alt="">
+                <img class="project-form__images-line-item" src="../img/projects/drone.jpg" alt="">
+                <img class="project-form__images-line-item" src="../img/projects/drone.jpg" alt="">
+                <img class="project-form__images-line-item" src="../img/projects/drone.jpg" alt="">
+                <span class="project-form__images-line-plus-button-container">
+                    <button class="project-form__images-line-plus-button">+</button>
+                </span>
+            </div>
+
+            <div class="project-form__file-container">
+                <div class="project-form__file-container-row">
+                    <i class="fas fa-paperclip file-container-icon" aria-hidden="true"></i>
+                    <a class="project-form__file-container-link" href="#" download>Техническое задание.docx</a>
+                    <button class="project-form__file-container-delete-button">
+                        <i class="fas fa-times"></i>
+                    </button> 
+                </div>
+
+                <div class="project-form__file-container__row">
+                    <i class="fas fa-paperclip file-container__icon" aria-hidden="true"></i>
+                    <a class="file-container__link" href="#" download>Техническое задание.docx</a>
+                    <button>
+                        <i class="fas fa-times"></i>
+                    </button> 
+                </div>
+
+            </div>
+
+            <div class="project-form__submit-button-container">
+                <button class="project-form__submit-button">Подтвердить</button>
+            </div>
+
         </div>
     </div>
 </body>
