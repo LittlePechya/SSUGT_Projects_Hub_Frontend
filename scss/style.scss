@@ -112,6 +112,7 @@
             transform: translateY(-5px);
         }
     }
+
 	&__bottom-border{
         margin-top: 20px;
         border-bottom: 14px solid var(--main-color);
@@ -227,6 +228,10 @@
         
         border-radius: 20px;
         border: none;
+
+        a{
+            color: var(--white-color);
+        }
     }
 
     &__info{

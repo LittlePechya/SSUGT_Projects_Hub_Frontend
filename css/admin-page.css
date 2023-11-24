@@ -3,6 +3,11 @@
   margin: 20px auto 0 auto;
 }
 
+.back-to-main-button {
+  margin: 0 0 10px 20px;
+  color: var(--main-color);
+}
+
 .admin-panel {
   background-color: var(--main-color);
   border-radius: 20px;
@@ -95,15 +100,25 @@
 
 .project-form {
   font-size: 24px;
-  border: 3px solid var(--text-color);
+  background-color: var(--white-color);
+  border: 4px solid var(--text-color);
   border-radius: 10px;
   padding: 15px;
+  display: none;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 .project-form__name {
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: 700;
   text-align: center;
   margin: 0 0 20px 0;
+  color: var(--main-color);
 }
 .project-form__line {
   display: flex;
@@ -116,11 +131,17 @@
   width: 50%;
   height: auto;
   resize: none;
+  border: 2px solid var(--main-color);
+  border-radius: 20px;
+  padding: 5px;
 }
 .project-form__textarea {
   width: 50%;
   resize: none;
   overflow: hidden;
+  border: 2px solid var(--main-color);
+  border-radius: 20px;
+  padding: 5px;
 }
 .project-form__close-button-container {
   display: flex;
@@ -141,14 +162,16 @@
 }
 .project-form__submit-button {
   font-weight: 600;
-  font-size: 26px;
+  font-size: 32px;
   color: white;
   padding: 10px;
   background-color: var(--main-color);
   border: none;
   border-radius: 20px;
+  cursor: pointer;
 }
-.project-form__images-line {
+
+.admin-gallery {
   min-height: 150px;
   width: 100%;
   background-color: var(--text-color);
@@ -159,25 +182,18 @@
   gap: 10px;
   padding: 15px;
 }
-.project-form__images-line-item {
+.admin-gallery__item {
   width: 23%;
   cursor: pointer;
 }
-.project-form__images-line-item:hover {
+.admin-gallery__item:hover {
   opacity: 0.2;
 }
-.project-form__images-line-tem-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.project-form__images-line-plus-button-container {
+.admin-gallery__button-container {
   width: 23%;
   height: 150px;
 }
-.project-form__images-line-plus-button {
+.admin-gallery__plus-button {
   width: 100%;
   height: 100%;
   color: var(--main-color);
@@ -187,7 +203,28 @@
   border: none;
   cursor: pointer;
 }
-.project-form__file-container {
+
+.admin-file-container {
   margin: 20px 0 0 0;
   background-color: var(--light-gray-color);
+}
+.admin-file-container__row {
+  margin: 0 0 0 20px;
+}
+.admin-file-container__link {
+  color: var(--main-color);
+}
+.admin-file-container__delete-button {
+  font-weight: 600;
+  cursor: pointer;
+}
+.admin-file-container__add-button {
+  background-color: var(--main-color);
+  padding: 10px;
+  font-size: 20px;
+  color: var(--white-color);
+  border: none;
+  border-radius: 20px;
+  margin: 10px 0 10px 30px;
+  cursor: pointer;
 }/*# sourceMappingURL=admin-page.css.map */

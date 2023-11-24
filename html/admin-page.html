@@ -18,6 +18,8 @@
 
 <body>
     <div class="container">
+        <a class="back-to-main-button" href="../index.html">На главную</a>
+
         <div class="admin-panel">
             <div class="admin-panel__header-row">
                 <div class="admin-panel__header-row-left">
@@ -99,36 +101,39 @@
                 <input  class="project-form__input" type="text">
             </div>
 
-            <div class="project-form__images-line">
-                <img class="project-form__images-line-item" src="../img/projects/drone.jpg" alt="">
-                <img class="project-form__images-line-item" src="../img/projects/drone.jpg" alt="">
-                <img class="project-form__images-line-item" src="../img/projects/drone.jpg" alt="">
-                <img class="project-form__images-line-item" src="../img/projects/drone.jpg" alt="">
-                <img class="project-form__images-line-item" src="../img/projects/drone.jpg" alt="">
-                <img class="project-form__images-line-item" src="../img/projects/drone.jpg" alt="">
-                <img class="project-form__images-line-item" src="../img/projects/drone.jpg" alt="">
-                <span class="project-form__images-line-plus-button-container">
-                    <button class="project-form__images-line-plus-button">+</button>
+            <div class="admin-gallery">
+                <img class="admin-gallery__item" src="../img/projects/drone.jpg" alt="">
+                <img class="admin-gallery__item" src="../img/projects/drone.jpg" alt="">
+                <img class="admin-gallery__item" src="../img/projects/drone.jpg" alt="">
+                <img class="admin-gallery__item" src="../img/projects/drone.jpg" alt="">
+                <img class="admin-gallery__item" src="../img/projects/drone.jpg" alt="">
+                <img class="admin-gallery__item" src="../img/projects/drone.jpg" alt="">
+                <img class="admin-gallery__item" src="../img/projects/drone.jpg" alt="">
+                <span class="admin-gallery__button-container">
+                    <button class="admin-gallery__plus-button">+</button>
                 </span>
             </div>
 
-            <div class="project-form__file-container">
-                <div class="project-form__file-container-row">
-                    <i class="fas fa-paperclip file-container-icon" aria-hidden="true"></i>
-                    <a class="project-form__file-container-link" href="#" download>Техническое задание.docx</a>
-                    <button class="project-form__file-container-delete-button">
+            <div class="admin-file-container">
+                <div class="admin-file-container__row">
+                    <i class="fas fa-paperclip admin-file-container__icon" aria-hidden="true"></i>
+                    <a class="admin-file-container__link" href="#" download>Техническое задание.docx</a>
+                    <button class="admin-file-container__delete-button">
                         <i class="fas fa-times"></i>
                     </button> 
                 </div>
 
-                <div class="project-form__file-container__row">
-                    <i class="fas fa-paperclip file-container__icon" aria-hidden="true"></i>
-                    <a class="file-container__link" href="#" download>Техническое задание.docx</a>
-                    <button>
+                <div class="admin-file-container__row">
+                    <i class="fas fa-paperclip admin-file-container__icon" aria-hidden="true"></i>
+                    <a class="admin-file-container__link" href="#" download>Техническое задание.docx</a>
+                    <button class="admin-file-container__delete-button">
                         <i class="fas fa-times"></i>
                     </button> 
                 </div>
 
+                <div class="admin-file-container__row">
+                    <button class="admin-file-container__add-button">Добавить файл</button>
+                </div>
             </div>
 
             <div class="project-form__submit-button-container">
@@ -136,7 +141,10 @@
             </div>
 
         </div>
+
     </div>
+
+    <script src="../js/admin-page.js"></script>
 </body>
 
 </html>

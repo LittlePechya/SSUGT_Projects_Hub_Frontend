@@ -4,6 +4,11 @@
 
 }
 
+.back-to-main-button{
+    margin: 0 0 10px 20px;
+    color: var(--main-color);
+}
+
 .admin-panel{
     background-color: var(--main-color);
     border-radius: 20px;
@@ -129,18 +134,32 @@
 
 .project-form{
     font-size: 24px;
+
+    background-color: var(--white-color);
     
-    border: 3px solid var(--text-color);
+    border: 4px solid var(--text-color);
     border-radius: 10px;
     padding: 15px;
 
+    // Hiding before button pressed
+    display: none;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    max-height: 90vh;
+    overflow-y: auto;
+
 
     &__name{
-        font-size: 28px;
-        font-weight: 600;
+        font-size: 32px;
+        font-weight: 700;
         text-align: center;
         margin: 0 0 20px 0;
+        color: var(--main-color);
     }
+
 	&__line{
         display: flex;
         margin: 0 0 10px 0;
@@ -155,12 +174,20 @@
         width: 50%;
         height: auto;
         resize: none;
+
+        border: 2px solid var(--main-color);
+        border-radius: 20px;
+        padding: 5px;
     }
 
     &__textarea{
         width: 50%;
         resize: none;
         overflow: hidden;
+
+        border: 2px solid var(--main-color);
+        border-radius: 20px;
+        padding: 5px;
     }
 
     &__close-button-container{
@@ -188,7 +215,7 @@
 
     &__submit-button{
         font-weight: 600;
-        font-size: 26px;
+        font-size: 32px;
         color: white;
 
         padding: 10px;
@@ -196,45 +223,40 @@
 
         border: none;
         border-radius: 20px;
+
+        cursor: pointer;
     }
 
-    &__images-line{
-        min-height: 150px;
-        width: 100%;
-        background-color: var(--text-color);
+}
 
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 10px;
+.admin-gallery{
+    min-height: 150px;
+    width: 100%;
+    background-color: var(--text-color);
 
-        padding: 15px;
-    }
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 
-    &__images-line-item{
+    padding: 15px;
+
+    &__item{
         width: 23%;
         cursor: pointer;
     }
 
-    &__images-line-item:hover{
+    &__item:hover{
         opacity: 0.2;
     }
 
-    &__images-line-tem-overlay{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    &__images-line-plus-button-container{
+    &__button-container{
         width: 23%;
         height: 150px;
     }
 
-    &__images-line-plus-button{
+    &__plus-button{
         width: 100%;
         height: 100%;
 
@@ -247,12 +269,40 @@
 
         cursor: pointer;
     }
+}
 
-    &__file-container{
-        margin: 20px 0 0 0;
-        background-color: var(--light-gray-color);
+.admin-file-container{
+    margin: 20px 0 0 0;
+    background-color: var(--light-gray-color);
+
+    &__row{
+        margin: 0 0 0 20px;
     }
-    &__file-container-row{}
-    &__file-container-link{}
-    &__file-container-delete-button{}
+    
+    // &__icon{}
+
+    &__link{
+        color: var(--main-color);
+    }
+    
+    &__delete-button{
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    &__add-button{
+        background-color: var(--main-color);
+
+        padding: 10px;
+
+        font-size: 20px;
+        color: var(--white-color);
+
+        border: none;
+        border-radius: 20px;
+
+        margin: 10px 0 10px 30px;
+
+        cursor: pointer;
+    }
 }
