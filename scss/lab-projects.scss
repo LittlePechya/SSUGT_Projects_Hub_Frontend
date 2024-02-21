@@ -89,7 +89,7 @@
         color: var(--text-color);
     }
 
-    &__education-level{
+    &__tag-list{
         font-size: 26px;
         font-weight: 500;
         color: var(--main-color);
@@ -106,8 +106,9 @@
         font-weight: 700;
     }
 
-    &__director{
+    &__user{
         color: var(--main-color);
+        font-weight: 700;
     }
 
     &__bottom-line{
