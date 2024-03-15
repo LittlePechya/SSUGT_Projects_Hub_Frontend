@@ -38,7 +38,7 @@
                 <input class="popup__input" type="password" id="password" placeholder="Введите пароль">
             </div>
             <div class="popup__button-container">
-                <button class="popup__button" type="button"><a href="/html/admin-page.html">Вход</a></button>
+                <button class="popup__button" type="button" id="login-button">Вход</button>
             </div>
             <p class="popup__info">Для того, чтобы предложить свой проект на рассмотрение отправляйте <a class="popup__link" href="../materials/template.docx" download="">заявку</a> на почту <span class="popup__special-text">admin@yandex.ru</span></p>
         </div>
@@ -61,7 +61,7 @@
                     </ul>
                 </div>
                 <div class="header__button-container">
-                    <button type="button" class="header__login-button" id="login-button">Войти</button>
+                    <button type="button" class="header__login-button" id="open-login-form-button">Войти</button>
                 </div>
             </nav>
             <div class="header__bottom-border"></div>
@@ -109,29 +109,16 @@
                 <div class="project-card">
                     <p class="project-card__text"> <a class="project-card__link" href="project-page.html">Fitting room</a></p>
                     <p class="project-card__tag-list">#ИИ #ДополненнаяРеальность</p>
-                    <p class="project-card__text"><span class="project-card__bold-text">Краткое описание: </span>Очень крутой проект. Он мне очень нравится. Мы сильно над ним постарались. Так это будет выглядеть на сайте.</p>
-                    <p class="project-card__text"><span class="project-card__bold-text">Авторы: </span><a class="project-card__user" href="#">Антонов В.И.</a><a class="project-card__user" href="#">Баркин П.В.</a></p>
+                    <p class="project-card__text"><span class="project-card__bold-text">Краткое описание:</span>
+                        <span class="project-description">
+                            Очень крутой проект. Он мне очень нравится. Мы сильно над ним постарались. Так это будет выглядеть на сайте.
+                        </span></p>
+                    <p class="project-card__text">
+                        <span class="project-card__bold-text">Авторы: </span>
+                        <a class="project-card__user" href="#">Антонов В.И.</a>
+                        <span class="project-card__bold-text"> / </span>
+                        <a class="project-card__user" href="#">Баркин П.В.</a></p>
                     <p class="project-card__text"><span class="project-card__bold-text">Руководитель: </span> <a class="project-card__user" href="#">Шарапов А.А.</a></p>
-                    <div class="project-card__bottom-line"></div>
-                </div>
-                <div class="project-card">
-                    <p class="project-card__text"> <a class="project-card__link" href="project-page.html">Квадрокоптер</a></p>
-                    <p class="project-card__tag-list">Бакалавриат</p>
-                    <p class="project-card__text"><span class="project-card__bold-text">Курс: </span>3</p>
-                    <p class="project-card__text"><span class="project-card__bold-text">Тип проекта: </span>прикладной</p>
-                    <p class="project-card__text"><span class="project-card__bold-text">Цель проекта: </span>Система управления квадрокоптером на основе технологии компьютерного зрения</p>
-                    <p class="project-card__text"><span class="project-card__bold-text">Сроки реализации: </span>Продолжительность проекта составляет 2 семестра</p>
-                    <p class="project-card__text"><span class="project-card__bold-text">Руководитель проекта: </span> <span class="project-card__director">Шарапов А.А.</span></p>
-                    <div class="project-card__bottom-line"></div>
-                </div>
-                <div class="project-card">
-                    <p class="project-card__text"> <a class="project-card__link" href="project-page.html">Умная лампа</a></p>
-                    <p class="project-card__tag-list">Бакалавриат</p>
-                    <p class="project-card__text"><span class="project-card__bold-text">Курс: </span>2</p>
-                    <p class="project-card__text"><span class="project-card__bold-text">Тип проекта: </span>прикладной</p>
-                    <p class="project-card__text"><span class="project-card__bold-text">Цель проекта: </span>Умный светодиодный светильник – это смесь современных технологий, интересного дизайна и захватывающего светового спектра.</p>
-                    <p class="project-card__text"><span class="project-card__bold-text">Сроки реализации: </span>Продолжительность проекта составляет 1 семестр</p>
-                    <p class="project-card__text"><span class="project-card__bold-text">Руководитель проекта: </span> <span class="project-card__director">Шарапов А.А.</span></p>
                     <div class="project-card__bottom-line"></div>
                 </div>
 
@@ -150,5 +137,6 @@
 
 
     <script src="../js/login.js"></script>
+    <script src="../js/project-gallery-fetch.js"></script>
 </body>
 </html>
